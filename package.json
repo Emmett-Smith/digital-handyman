@@ -1,0 +1,36 @@
+{
+  "name": "throughline-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "build:pages": "node scripts/build-pages.mjs",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/verify.mjs",
+    "test:launch": "node scripts/verify-launch.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.12",
+    "geist": "^1.7.2",
+    "gsap": "^3.13.0",
+    "next": "^15.5.25",
+    "ogl": "^1.0.11",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "lighthouse": "^12.8.2",
+    "playwright": "^1.55.0",
+    "prettier": "^3.9.6",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  }
+}

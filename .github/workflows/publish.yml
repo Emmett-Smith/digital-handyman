@@ -1,0 +1,46 @@
+name: Publish website
+
+on:
+  push:
+    branches: [main, codex/website-launch]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - uses: actions/configure-pages@v5
+      - name: Build interactive static preview
+        run: node scripts/build-pages.mjs
+        env:
+          PAGES_BASE_PATH: /throughline-ai
+          NEXT_PUBLIC_SITE_URL: https://emmett-smith.github.io/throughline-ai
+          NEXT_PUBLIC_CONTACT_EMAIL: ${{ vars.NEXT_PUBLIC_CONTACT_EMAIL }}
+          NEXT_PUBLIC_PHONE: ${{ vars.NEXT_PUBLIC_PHONE }}
+          NEXT_PUBLIC_CALENDLY_URL: ${{ vars.NEXT_PUBLIC_CALENDLY_URL }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .publish/pages/out
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

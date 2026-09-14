@@ -1,0 +1,54 @@
+.reading-progress { position: fixed; inset: 0 0 auto; height: 3px; z-index: 100; pointer-events: none; }
+.reading-progress > div { height: 100%; transform: scaleX(0); transform-origin: left; background: linear-gradient(90deg, #6666ff, #bebeff); box-shadow: 0 0 14px #7777ff70; }
+.hero-field { translate: 0 var(--hero-drift, 0px); }
+.chapter-dock { position: fixed; z-index: 35; right: 26px; bottom: 24px; display: flex; align-items: center; border: 1px solid #414b5a; border-radius: 6px; color: #edf0f3; background: #10161df2; box-shadow: 0 8px 35px #0003; backdrop-filter: blur(16px); opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .25s, transform .25s, visibility .25s; }
+.chapter-dock-visible { opacity: 1; visibility: visible; transform: none; }
+.chapter-menu summary { display: flex; align-items: center; gap: 15px; min-height: 48px; padding: 0 16px; cursor: pointer; font-size: 11px; list-style: none; }
+.chapter-menu summary::-webkit-details-marker { display: none; }
+.chapter-count { color: #c4c4ff; font-size: 11px; }
+.chapter-count > span { color: #a9b1be; }
+.chapter-menu summary > svg { margin-left: 10px; transition: transform .2s; }
+.chapter-menu[open] summary > svg { transform: rotate(45deg); }
+.chapter-menu nav { position: absolute; bottom: calc(100% + 10px); right: 0; width: 310px; padding: 9px; background: #10161d; border: 1px solid #414b5a; border-radius: 6px; box-shadow: 0 10px 40px #0004; }
+.chapter-menu nav a { display: flex; align-items: center; gap: 14px; padding: 11px 12px; border-radius: 3px; font-size: 12px; }
+.chapter-menu nav a > .mono { font-size: 10px; color: #a9b1be; }
+.chapter-menu nav a:hover, .chapter-menu nav a[aria-current] { background: #252d3d; }
+.chapter-active-dot { width: 5px; height: 5px; margin-left: auto; border-radius: 50%; }
+[aria-current] > .chapter-active-dot { background: #b6b6ff; }
+.chapter-next { display: flex; width: 45px; min-height: 48px; align-items: center; justify-content: center; border-left: 1px solid #414b5a; }
+.chapter-next:hover { background: #252d3d; }
+.chapter-dock :focus-visible { outline-color: #b6b6ff; outline-offset: 2px; }
+.delivery-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.delivery-strip-inner { display: grid; grid-template-columns: 1.15fr 1fr 1fr 1fr; gap: 24px; padding-block: 33px; }
+.delivery-strip p { font-size: 13px; line-height: 1.65; }
+.delivery-strip p > span { color: #a9b1be; font-size: 11px; }
+.delivery-commitment { display: flex; align-items: flex-start; gap: 13px; padding-left: 22px; border-left: 1px solid var(--line); }
+.delivery-commitment > .mono { color: #aaaaff; font-size: 10px; padding-top: 3px; }
+.delivery-commitment strong { display: block; font-size: 12px; font-weight: 500; }
+.delivery-commitment div > span { display: block; color: #a9b1be; font-size: 10px; margin-top: 4px; }
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-reveal { translate: 0 22px; transition: translate .8s cubic-bezier(.2,.65,.25,1); }
+  .scroll-reveal.scroll-arrived { translate: 0 0; }
+  .delivery-commitment:nth-child(3) { transition-delay: 80ms; }
+  .delivery-commitment:nth-child(4) { transition-delay: 160ms; }
+  .button { transition: background .2s, color .2s, box-shadow .2s, transform .2s; }
+  .button:hover { transform: translateY(-2px); }
+  .button:active { transform: translateY(0); }
+  .scroll-cue svg { animation: cue-drift 2.4s ease-in-out 3; }
+  @keyframes cue-drift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
+}
+@media (max-width: 1100px) {
+  .delivery-strip-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .delivery-commitment:nth-child(3) { padding-left: 0; border-left: 0; }
+}
+@media (max-width: 767px) {
+  .chapter-dock { display: none; }
+  .delivery-strip-inner { grid-template-columns: 1fr; gap: 20px; padding-block: 27px; }
+  .delivery-strip p { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+  .delivery-commitment { padding-left: 0; border: 0; }
+  .delivery-commitment div > span { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-field { translate: none; }
+  .chapter-dock, .chapter-menu summary > svg { transition: none; }
+}

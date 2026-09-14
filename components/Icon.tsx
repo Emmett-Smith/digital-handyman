@@ -1,0 +1,118 @@
+import { interfaceCopy } from "@/content/interface";
+const copy = interfaceCopy.Icon;
+export function Icon({
+  name,
+  size = 20,
+  className = "",
+}: {
+  name: string;
+  size?: number;
+  className?: string;
+}) {
+  const paths: Record<string, React.ReactNode> = {
+    plus: <path d="M12 5v14M5 12h14" />,
+    close: <path d="m6 6 12 12M6 18 12-12" />,
+    search: (
+      <>
+        <circle cx="10.5" cy="10.5" r="6.5" />
+        <path d="m16 16 4.5 4.5" />
+      </>
+    ),
+    check: <path d="m5 12 4 4L19 6" />,
+    chevron: <path d="m8 5 7 7-7 7" />,
+    down: <path d="m5 9 7 7 7-7" />,
+    play: <path d="m9 5 11 7-11 7Z" />,
+    mail: (
+      <>
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 6 9 7 9-7" />
+      </>
+    ),
+    phone: (
+      <path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2Z" />
+    ),
+    clock: (
+      <>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 6v6l4 2" />
+      </>
+    ),
+    shield: (
+      <>
+        <path d="m12 3 8 3v6c0 4-5 8-8 9-3-1-8-5-8-9V6Z" />
+        <path d="m8 12 3 3 5-6" />
+      </>
+    ),
+    file: (
+      <>
+        <path d="M14 3H5v18h14V8Z" />
+        <path d="M14 3v5h5M8 12h8M8 16h6" />
+      </>
+    ),
+    spark: (
+      <>
+        <path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z" />
+      </>
+    ),
+    calendar: (
+      <>
+        <rect x="3" y="5" width="18" height="16" rx="2" />
+        <path d="M7 3v4M17 3v4M3 11h18M7 15h2M13 15h2" />
+      </>
+    ),
+    copy: (
+      <>
+        <rect x="8" y="8" width="12" height="13" rx="2" />
+        <path d="M16 8V3H3v13h5" />
+      </>
+    ),
+    download: (
+      <>
+        <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+      </>
+    ),
+  };
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      {paths[name] || paths.spark}
+    </svg>
+  );
+}
+export function Logo({ large = false }: { large?: boolean }) {
+  return (
+    <span
+      className={`wordmark ${large ? "wordmark-large" : ""}`}
+      role="img"
+      aria-label={copy.throughline_ai}
+    >
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M2 7h11l5 7h8M2 14h8l5 7h11M2 21h7M19 7h7"
+          stroke="currentColor"
+          strokeWidth="2.2"
+        />
+      </svg>
+      <span>
+        {copy.throughline}
+        <span className="logo-ai">{copy.ai}</span>
+      </span>
+    </span>
+  );
+}
