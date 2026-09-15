@@ -17,8 +17,8 @@ const mono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Throughline AI — Good people. Less repeat work.",
-    template: "%s | Throughline AI",
+    default: "Digital Handyman — We’ll get it done.",
+    template: "%s | Digital Handyman",
   },
   description: site.description,
   openGraph: {

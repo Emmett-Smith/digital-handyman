@@ -1,4 +1,4 @@
-# Throughline AI — build note
+# Digital Handyman — build note
 
 ## The design
 
@@ -79,4 +79,4 @@ Recovered capacity and both prices now share one proportional chart scale, inclu
 
 ## Studio presentation
 
-The site now presents Throughline AI as a business, with no individual biography, academic history, portrait configuration, or personal technical background. The former profile section is replaced by an original process drawing and practical commitments about scope, review, and ownership. Navigation, hero copy, the call page, configuration examples, documentation, and saved previews were updated together. All 22 browser checks pass, including a check that personal-profile language is absent.
+The site presents Digital Handyman as a dependable service business, with no individual biography, academic history, portrait configuration, or personal technical background. The profile section uses an original process drawing and practical commitments about scope, review, and ownership. Navigation, hero copy, the call page, configuration examples, documentation, and saved previews were updated together. All 22 browser checks pass, including a check that personal-profile language is absent.

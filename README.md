@@ -1,6 +1,6 @@
-# Throughline AI
+# Digital Handyman
 
-A custom Next.js 15 website for Throughline AI: a GPU particle field, a scroll-driven process drawing, forty searchable automations, twelve industry landing pages, an interactive demo, a calculator, a scorecard, and a shared booking flow.
+A custom Next.js 15 website for Digital Handyman: practical modernization for small businesses, presented with familiar language, clear prices, interactive examples, twelve industry landing pages, a calculator, a scorecard, and a shared booking flow.
 
 ## Website publication
 

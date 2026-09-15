@@ -97,17 +97,15 @@ export function Logo({ large = false }: { large?: boolean }) {
       aria-label={copy.throughline_ai}
     >
       <svg
-        width="28"
+        width="31"
         height="28"
-        viewBox="0 0 28 28"
+        viewBox="0 0 31 28"
         fill="none"
         aria-hidden="true"
       >
-        <path
-          d="M2 7h11l5 7h8M2 14h8l5 7h11M2 21h7M19 7h7"
-          stroke="currentColor"
-          strokeWidth="2.2"
-        />
+        <path d="M2 4h12v9H2z" fill="currentColor" stroke="none" />
+        <path d="M16 5h13M16 9h13M2 17h27M2 21h27M2 25h27" stroke="currentColor" strokeWidth="2" />
+        <path d="m8 6 .75 1.5 1.65.25-1.2 1.15.3 1.65L8 9.8l-1.5.75.3-1.65-1.2-1.15 1.65-.25Z" fill="#fff" stroke="none" />
       </svg>
       <span>
         {copy.throughline}

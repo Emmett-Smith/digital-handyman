@@ -2,21 +2,21 @@
 @theme inline {
   --font-sans: var(--font-geist);
   --font-mono: var(--font-geist-mono);
-  --color-paper: #edf0f3;
-  --color-instrument: #10161d;
-  --color-signal: #2b2bd9;
+  --color-paper: #f4f1e9;
+  --color-instrument: #071b33;
+  --color-signal: #b32632;
 }
 :root {
-  --paper: #edf0f3;
+  --paper: #f4f1e9;
   --surface: #fff;
-  --instrument: #10161d;
-  --ink: #0e1620;
-  --signal: #2b2bd9;
+  --instrument: #071b33;
+  --ink: #0b1d31;
+  --signal: #b32632;
   --healthy: #16a38c;
   --cost: #d33f3f;
   --muted: #a9b1be;
   --line: rgba(188, 201, 222, 0.18);
-  --paper-line: #ccd2d9;
+  --paper-line: #cfc9bc;
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
@@ -98,7 +98,7 @@ svg {
   flex-shrink: 0;
 }
 ::selection {
-  background: #4949dd;
+  background: #b32632;
   color: #fff;
 }
 :focus-visible {
@@ -217,7 +217,7 @@ svg {
   color: #fff;
 }
 .button-signal:hover {
-  background: #1919b7;
+  background: #8f1e28;
 }
 .button-outline {
   border: 1px solid #929ba8;
@@ -245,9 +245,9 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 550;
-  letter-spacing: -1.1px;
+  letter-spacing: -0.75px;
   white-space: nowrap;
   line-height: 1;
 }

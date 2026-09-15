@@ -8,14 +8,14 @@ export function FlowPoster() {
     >
       <defs>
         <linearGradient id="thread-color" x1="0" x2="1">
-          <stop stopColor="#2B2BD9" stopOpacity=".04" />
-          <stop offset=".38" stopColor="#6868FF" stopOpacity=".65" />
-          <stop offset=".72" stopColor="#CAD1FF" stopOpacity=".7" />
-          <stop offset="1" stopColor="#EDF0F3" stopOpacity=".03" />
+          <stop stopColor="#B32632" stopOpacity=".04" />
+          <stop offset=".38" stopColor="#C94B55" stopOpacity=".62" />
+          <stop offset=".72" stopColor="#E8EDF5" stopOpacity=".72" />
+          <stop offset="1" stopColor="#F5F2EA" stopOpacity=".03" />
         </linearGradient>
         <radialGradient id="field-light">
-          <stop stopColor="#3838BD" stopOpacity=".17" />
-          <stop offset="1" stopColor="#10161D" stopOpacity="0" />
+          <stop stopColor="#174A7A" stopOpacity=".2" />
+          <stop offset="1" stopColor="#071B33" stopOpacity="0" />
         </radialGradient>
       </defs>
       <ellipse cx="590" cy="330" rx="400" ry="300" fill="url(#field-light)" />

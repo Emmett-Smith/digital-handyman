@@ -35,7 +35,7 @@ const make = (
   examples,
   weeklyHours,
   hooks,
-  description: `AI automation for ${name.toLowerCase()}. Spend less time on ${examples[0].toLowerCase()} and more time on your business. Fixed-price Audit: $2,500.`,
+  description: `Practical digital help for ${name.toLowerCase()}. Spend less time on ${examples[0].toLowerCase()} and more time on your business. Fixed-price Business Tune-Up: $2,500.`,
   calculator: { people: 3, hours: 12, rate, share: 65 },
 });
 export const industries: Industry[] = [

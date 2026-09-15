@@ -67,8 +67,8 @@ export async function POST(request: Request) {
         to: quote ? process.env.QUOTE_TO : body.email,
         reply_to: quote ? body.email : undefined,
         subject: quote
-          ? "Throughline AI — written quote request"
-          : "Your Throughline AI estimate",
+          ? "Digital Handyman — written quote request"
+          : "Your Digital Handyman estimate",
         text: body.text,
       }),
       signal: AbortSignal.timeout(10000),

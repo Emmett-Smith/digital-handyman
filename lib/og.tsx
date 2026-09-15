@@ -21,7 +21,7 @@ export function ogImage(headline: string, audience = "For the everyday work.") {
           fontSize: 26,
         }}
       >
-        <span>throughline ai</span>
+        <span>digital handyman</span>
         <span style={{ fontSize: 19, color: "#b6becc" }}>{audience}</span>
       </div>
       <div
@@ -44,7 +44,7 @@ export function ogImage(headline: string, audience = "For the everyday work.") {
         }}
       >
         <span>Less repeat work. More time back.</span>
-        <span>Automation Audit $2,500</span>
+        <span>Business Tune-Up $2,500</span>
       </div>
     </div>,
     { width: 1200, height: 630 },

@@ -13,7 +13,7 @@ export async function generateMetadata({
   const i = getIndustry((await params).industry);
   return i
     ? {
-        title: `AI automation for ${i.name.toLowerCase()}`,
+        title: `Practical digital help for ${i.name.toLowerCase()}`,
         description: i.description,
         alternates: { canonical: `/for/${i.slug}` },
         openGraph: {

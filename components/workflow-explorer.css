@@ -17,7 +17,7 @@
 .workflow-tabs button > svg { margin-left: auto; }
 .workflow-tab-number { font-size: 10px; color: #505c6d; }
 .workflow-tabs button:hover { background: #e1e5ee; }
-.workflow-tabs button[aria-selected="true"] { color: #fff; background: #2525ba; border-color: #2525ba; }
+.workflow-tabs button[aria-selected="true"] { color: #fff; background: #a7212d; border-color: #a7212d; }
 .workflow-tabs button[aria-selected="true"] .workflow-tab-number { color: #ccceff; }
 .workflow-console { overflow: hidden; border: 1px solid #263342; border-radius: 8px; box-shadow: 0 22px 60px -35px #10161d70; background: radial-gradient(ellipse at 45% 0%, #232644 0, transparent 65%), #111821; }
 .workflow-console-bar { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 26px; border-bottom: 1px solid #ffffff13; background: #ffffff02; font-size: 11px; color: #a9b4c4; }

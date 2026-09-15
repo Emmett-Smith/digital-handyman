@@ -138,7 +138,7 @@ export function WorkflowExplorer() {
             <span className="section-note"><span className="small-line" /> The connections are where it gets useful</span>
             <h2 id="workflow-heading">Your tools.<br />Working together.</h2>
           </div>
-          <p>Good AI implementation connects the work from start to finish. Explore what that could look like, including the moments that need a person.</p>
+          <p>Good modernization connects the work from start to finish. See what that can look like, including the moments that still need a person.</p>
         </div>
 
         <div className="workflow-tabs" role="tablist" aria-label="Explore an example workflow">

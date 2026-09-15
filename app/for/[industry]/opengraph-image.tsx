@@ -1,6 +1,6 @@
 import { getIndustry, industries } from "@/content/industries";
 import { ogImage } from "@/lib/og";
-export const alt = "AI automation for your business — Throughline AI";
+export const alt = "Practical digital help for your business — Digital Handyman";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export function generateStaticParams() {

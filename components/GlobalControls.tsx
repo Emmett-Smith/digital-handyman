@@ -86,7 +86,7 @@ export function GlobalControls() {
     else exitDialog.current?.close();
   }, [exit]);
   const links = [
-    { label: "Explore AI integrations", id: "workflows" },
+    { label: "See how it works", id: "workflows" },
     { label: copy.what_we_automate, id: "library" },
     { label: copy.how_it_works, id: "process" },
     { label: copy.try_the_demo, id: "demo" },

@@ -6,7 +6,7 @@ const copy = interfaceCopy.EmailCopy;
 
 export function downloadText(
   text: string,
-  filename = "throughline-estimate.txt",
+  filename = "digital-handyman-estimate.txt",
 ) {
   const url = URL.createObjectURL(new Blob([text], { type: "text/plain" }));
   const a = document.createElement("a");

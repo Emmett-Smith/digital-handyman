@@ -107,7 +107,7 @@ export function Booking({
     }, 500);
     return () => clearTimeout(timeout);
   }, [company, problem, industry]);
-  const quoteText = `Throughline AI — written quote request\nCompany: ${company || copy.not_provided}\nContact: ${email}\nWork: ${task || problem}\nTimeline: ${timeline}\nBudget: ${budget}\n${JSON.stringify(attribution())}`;
+  const quoteText = `Digital Handyman — written quote request\nCompany: ${company || copy.not_provided}\nContact: ${email}\nWork: ${task || problem}\nTimeline: ${timeline}\nBudget: ${budget}\n${JSON.stringify(attribution())}`;
   return (
     <section id="booking" className="booking-section instrument">
       <div className="container">
@@ -211,8 +211,8 @@ export function Booking({
                   className="button button-white"
                   onClick={() =>
                     downloadText(
-                      `Throughline AI — 30-minute call agenda\nCompany: ${company || copy.your_company}\nThe work eating the most time: ${problem || copy.discuss_recurring_work_and_possible_starting}\n\nAutomation Audit: $2,500, one week. Fee credited in full against any build.\n${site.guarantee}`,
-                      "throughline-call-agenda.txt",
+                      `Digital Handyman — 30-minute call agenda\nCompany: ${company || copy.your_company}\nThe work eating the most time: ${problem || copy.discuss_recurring_work_and_possible_starting}\n\nBusiness Tune-Up: $2,500, one week. Fee credited in full against any build.\n${site.guarantee}`,
+                      "digital-handyman-call-agenda.txt",
                     )
                   }
                 >
@@ -398,7 +398,7 @@ export function Booking({
             <button
               className="text-button"
               onClick={() =>
-                downloadText(quoteText, "throughline-quote-request.txt")
+                downloadText(quoteText, "digital-handyman-quote-request.txt")
               }
             >
               {copy.save_a_copy_of_my_request}

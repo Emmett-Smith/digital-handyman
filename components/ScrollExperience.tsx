@@ -123,7 +123,7 @@ export function DeliveryStrip() {
   return (
     <div className="delivery-strip instrument">
       <div className="container delivery-strip-inner">
-        <p>Practical AI.<br /><span>From first idea to everyday use.</span></p>
+        <p><span className="service-flag" aria-hidden="true"><i /><i /><i /></span> We’ll get it done.<br /><span>Proud to serve America’s small businesses.</span></p>
         {[
           ["01", "Find the right work", "A focused audit. A clear business case."],
           ["02", "Connect what you have", "Your tools, your rules, your workflow."],

@@ -62,7 +62,7 @@ export function Calculator({
       once.current = true;
     }
   };
-  const text = `Throughline AI — your estimate\n\n${values.people} people × ${values.hours} hours/week × ${values.share}% recoverable = ${hours.toFixed(1)} hours/week.\nHourly cost including overhead: ${money(values.rate)}.\nEstimated annual value of recovered time: ${money(annual)} (52 weeks).\nAutomation Audit: $2,500, credited in full against a build. Build Sprint: from $9,500.\nAt these assumptions, the starting Sprint price equals ${((9500 / (annual || 1)) * 12).toFixed(1)} months of recovered capacity.\nThis is an estimate of time capacity, not guaranteed cash savings. Subscription, ongoing support, adoption, and other costs are not included. The Audit checks your actual process and assumptions.`;
+  const text = `Digital Handyman — your estimate\n\n${values.people} people × ${values.hours} hours/week × ${values.share}% recoverable = ${hours.toFixed(1)} hours/week.\nHourly cost including overhead: ${money(values.rate)}.\nEstimated annual value of recovered time: ${money(annual)} (52 weeks).\nBusiness Tune-Up: $2,500, credited in full against a build. Get-It-Done Build: from $9,500.\nAt these assumptions, the starting build price equals ${((9500 / (annual || 1)) * 12).toFixed(1)} months of recovered capacity.\nThis is an estimate of time capacity, not guaranteed cash savings. Software, ongoing support, adoption, and other costs are not included. The Tune-Up checks your actual process and assumptions.`;
   return (
     <section id="calculator" className="calculator-section instrument">
       <div className="container">

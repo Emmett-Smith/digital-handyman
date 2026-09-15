@@ -48,7 +48,7 @@ await page.goto(origin, { waitUntil: "networkidle" });
 await check("Homepage renders without client errors", async () => {
   assert.equal(
     await page.locator("h1").innerText(),
-    "Good people.\nToo much\nrepeat work.",
+    "Modern tools.\nOld-fashioned\nfollow-through.",
   );
   assert.deepEqual(errors, []);
   assert.doesNotMatch(await page.locator("body").innerText(), /aerospace|aircraft|flight software|founder/i);
@@ -58,7 +58,7 @@ await check("Library department filter and keyboard expansion", async () => {
   await page.getByRole("button", { name: "Finance", exact: true }).click();
   assert.ok((await page.locator(".automation-title").count()) > 0);
   await page
-    .getByRole("textbox", { name: "Search automations" })
+    .getByRole("textbox", { name: "Search ways we can help" })
     .fill("unpaid");
   assert.equal(await page.locator(".automation-title").count(), 1);
   await page.locator(".automation-toggle").focus();
@@ -67,7 +67,7 @@ await check("Library department filter and keyboard expansion", async () => {
     await page.locator(".automation-toggle").getAttribute("aria-expanded"),
     "true",
   );
-  await page.getByRole("textbox", { name: "Search automations" }).fill("");
+  await page.getByRole("textbox", { name: "Search ways we can help" }).fill("");
 });
 await check("A deep link reveals an entry hidden by filters", async () => {
   await page.evaluate(() => {
@@ -129,7 +129,7 @@ await check("Estimate download is available without email", async () => {
     .getByRole("button", { name: "Save a copy of your estimate" })
     .click();
   const download = await downloadPromise;
-  assert.equal(download.suggestedFilename(), "throughline-estimate.txt");
+  assert.equal(download.suggestedFilename(), "digital-handyman-estimate.txt");
 });
 await check(
   "Scorecard returns three opportunities without collecting an email",
@@ -308,7 +308,7 @@ await check(
 await check("Unknown account falls back to the generic homepage", async () => {
   const r = await page.request.get(`${origin}/c/mistyped-account`);
   assert.equal(r.status(), 200);
-  assert.match(await r.text(), /Good people/);
+  assert.match(await r.text(), /Modern tools/);
 });
 await check("Invalid demo input is rejected", async () => {
   const r = await page.request.post(`${origin}/api/demo`, {

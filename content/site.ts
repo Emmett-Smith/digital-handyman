@@ -1,13 +1,13 @@
 export const site = {
-  name: "Throughline AI",
+  name: "Digital Handyman",
   bookingLabel: "Book a 30-minute call",
   positioning:
-    "We turn repetitive work into reliable workflows. Practical AI, connected to the tools you already use, with your team in control.",
-  headline: ["Good people.", "Too much", "repeat work."],
+    "We fix the paperwork, follow-ups, and computer chores slowing down your business—then show your team exactly how it works.",
+  headline: ["Modern tools.", "Old-fashioned", "follow-through."],
   description:
-    "AI consulting, implementation and integration for the work that fills your week. A fixed-price $2,500 Audit, a working build, and a team that gets its time back.",
+    "Practical technology help for American small businesses. Clear prices, working solutions, patient training, and support after the job is done.",
   guarantee:
-    "If the Audit doesn’t identify at least ten hours a week of recoverable time, there’s no charge.",
+    "If the Business Tune-Up doesn’t identify at least ten hours a week your team can get back, there’s no charge.",
   contact: {
     phone: process.env.NEXT_PUBLIC_PHONE || "",
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "",
@@ -17,7 +17,7 @@ export const site = {
 };
 export const offers = [
   {
-    name: "Automation Audit",
+    name: "Business Tune-Up",
     time: "One week",
     price: "$2,500",
     unit: "fixed price",
@@ -31,7 +31,7 @@ export const offers = [
     featured: true,
   },
   {
-    name: "Build Sprint",
+    name: "Get-It-Done Build",
     time: "Two to three weeks",
     price: "$9,500",
     unit: "starting at",
@@ -45,13 +45,13 @@ export const offers = [
     featured: false,
   },
   {
-    name: "Ongoing Automation",
+    name: "Keep-It-Running Service",
     time: "Monthly",
     price: "$2,800",
     unit: "from, per month",
     description: "Keep getting time back as your business grows.",
     items: [
-      "One new automation shipped each month",
+      "One new time-saving improvement each month",
       "Maintenance of everything already built",
       "A continuing queue, prioritized together",
     ],
@@ -65,14 +65,14 @@ export const stages = [
     duration: "30 min",
     title: "Start with the work.",
     description:
-      "Tell us what keeps coming back to your desk. We’ll tell you whether an Audit makes sense.",
+      "Tell us what keeps coming back to your desk. We’ll tell you whether a Business Tune-Up makes sense.",
   },
   {
-    name: "The Audit",
+    name: "The Tune-Up",
     duration: "1 week",
     title: "Find the hours.",
     description:
-      "We walk through the work with your team, put numbers against it, and quote the top three opportunities.",
+      "We walk through the work with your team, put numbers against it, and quote the top three improvements.",
   },
   {
     name: "The build",

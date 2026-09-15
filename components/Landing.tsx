@@ -62,7 +62,7 @@ export function Landing({
                   ? `Built for ${industry?.audience || "businesses"} like ${company}.`
                   : industry
                     ? `For ${industry.name.toLowerCase()}`
-                    : "AI consulting, implementation & integration."}
+                    : "Practical digital help for American small businesses."}
               </span>
               <h1
                 className={
@@ -273,7 +273,7 @@ export function Landing({
                 <p>{copy.studio_review}</p>
                 <p>{copy.studio_handoff}</p>
                 <div className="studio-signoff">
-                  <strong>Throughline AI</strong>
+                  <strong>Digital Handyman</strong>
                   <span>{copy.studio_commitment}</span>
                 </div>
               </div>

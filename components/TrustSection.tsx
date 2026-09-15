@@ -28,7 +28,7 @@ const questions = [
   {
     question: "Will this work with the tools we already use?",
     answer:
-      "That is the starting point. The Audit checks your existing tools, available connections, and access requirements. If a system has limits or needs another subscription, you see that in the scope before choosing a build.",
+      "That is the starting point. The Business Tune-Up checks your existing tools, available connections, and access requirements. If a system has limits or needs another subscription, you see that in the scope before choosing a build.",
   },
   {
     question: "What happens to our business data?",
@@ -37,11 +37,11 @@ const questions = [
   },
   {
     question: "How long does an engagement take?",
-    answer: `The ${audit.price} Audit takes ${audit.time.toLowerCase()}. A Build Sprint starts at ${sprint.price} and is scoped for ${sprint.time.toLowerCase()}. Your quote sets out the workflow, access needed, milestones, and acceptance checks. The Audit is credited in full against any build.`,
+    answer: `The ${audit.price} Business Tune-Up takes ${audit.time.toLowerCase()}. A Get-It-Done Build starts at ${sprint.price} and is scoped for ${sprint.time.toLowerCase()}. Your quote sets out the work, access needed, milestones, and acceptance checks. The Tune-Up is credited in full against any build.`,
   },
   {
     question: "What do we own, and what happens after launch?",
-    answer: `Everything we build belongs to your business, with documentation and team training included. Ongoing Automation is optional, from ${support.price} per month with a three-month minimum. Maintenance, notice, and handoff terms are agreed in writing before that engagement starts.`,
+    answer: `Everything we build belongs to your business, with documentation and team training included. Keep-It-Running Service is optional, from ${support.price} per month with a three-month minimum. Maintenance, notice, and handoff terms are agreed in writing before that engagement starts.`,
   },
 ];
 
