@@ -25,7 +25,7 @@ try {
   await page.locator(".footer-industries a").first().click();
   await page.waitForURL("**/for/dental/");
   await page.waitForLoadState("networkidle");
-  assert.match(await page.locator("h1").innerText(), /patients|dental|practice/i);
+  assert.equal(await page.locator("h1").innerText(), "Your front desk has more to do than recall calls.");
   const og = await page.locator('meta[property="og:image"]').getAttribute("content");
   const localOG = new URL(og); localOG.host = new URL(origin).host; localOG.protocol = new URL(origin).protocol;
   assert.equal((await context.request.get(localOG.href)).status(), 200);
