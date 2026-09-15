@@ -40,7 +40,7 @@ export function Booking({
         setProblem(event.detail);
       try {
         const savedOpportunity = sessionStorage.getItem(
-          "throughline.opportunity",
+          "digital-handyman.opportunity",
         );
         if (savedOpportunity) setProblem(savedOpportunity);
         const data = attribution();
@@ -48,7 +48,7 @@ export function Booking({
       } catch {}
     };
     prefill();
-    window.addEventListener("throughline:book", prefill);
+    window.addEventListener("digital-handyman:book", prefill);
     const message = (event: MessageEvent) => {
       if (
         event.origin === "https://calendly.com" &&
@@ -58,7 +58,7 @@ export function Booking({
     };
     window.addEventListener("message", message);
     return () => {
-      window.removeEventListener("throughline:book", prefill);
+      window.removeEventListener("digital-handyman:book", prefill);
       window.removeEventListener("message", message);
     };
   }, [initialCompany]);
@@ -85,7 +85,7 @@ export function Booking({
         url.searchParams.set("a2", problem);
         let score = "";
         try {
-          score = sessionStorage.getItem("throughline.scorecard") || "";
+          score = sessionStorage.getItem("digital-handyman.scorecard") || "";
         } catch {}
         url.searchParams.set(
           "a3",
@@ -164,7 +164,7 @@ export function Booking({
                 <Icon name="calendar" size={17} />{" "}
                 {copy.your_first_conversation}
               </span>
-              <span className="quiet">{copy.throughline_ai}</span>
+              <span className="quiet">{copy.digital_handyman}</span>
             </div>
             <div className="booking-preparation">
               <label>

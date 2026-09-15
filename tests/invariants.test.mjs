@@ -50,8 +50,8 @@ test("origin verification works behind a proxy and rejects unrelated websites", 
     sameOrigin(
       new Request("http://0.0.0.0:3000/api/demo", {
         headers: {
-          host: "throughline.example",
-          origin: "https://throughline.example",
+          host: "digital-handyman.example",
+          origin: "https://digital-handyman.example",
           "x-forwarded-proto": "https",
         },
       }),

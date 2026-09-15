@@ -38,6 +38,7 @@ for (const width of [1440, 1024, 768, 390, 320]) {
       "calculator",
       "pricing",
       "studio",
+      "american-service",
     ]) {
       await page.locator(`#${id}`).scrollIntoViewIfNeeded();
       await page.waitForTimeout(650);

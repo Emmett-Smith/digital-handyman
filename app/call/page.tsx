@@ -51,7 +51,7 @@ export default function CallPage() {
           <a href={`tel:${site.contact.phone}`}>{site.contact.phone}</a>
         )}
       </div>
-      <footer>{copy.throughline_business_tagline}</footer>
+      <footer>{copy.digital_handyman_business_tagline}</footer>
     </main>
   );
 }

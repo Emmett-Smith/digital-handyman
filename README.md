@@ -4,10 +4,10 @@ A custom Next.js 15 website for Digital Handyman: practical modernization for sm
 
 ## Website publication
 
-GitHub source: https://github.com/Emmett-Smith/throughline-ai (private).
-GitHub Pages address: https://emmett-smith.github.io/throughline-ai/
+GitHub source: https://github.com/Emmett-Smith/digital-handyman.
+GitHub Pages address: https://emmett-smith.github.io/digital-handyman/
 
-The `Publish website` workflow builds and publishes the preview on pushes to `codex/website-launch` or `main`. The public website and private source use the same repository. Add public business details as repository Actions variables (`NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_PHONE`, and `NEXT_PUBLIC_CALENDLY_URL`), then rerun the workflow.
+The `Publish website` workflow builds and publishes the preview on pushes to `main`. The public website and source use the same repository. Add public business details as repository Actions variables (`NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_PHONE`, and `NEXT_PUBLIC_CALENDLY_URL`), then rerun the workflow.
 
 The published Pages distribution includes the interactive workflow explorer with human approval checkpoints, scroll progress and chapter navigation, delivery commitments and FAQs, all twelve industry pages, the calculator, scorecard, downloads, and recorded demo examples. It does not host the server API: live AI, email delivery, and server-rendered company personalization require full Next.js hosting. No information is submitted by the sample demonstrations; unconnected delivery shows an explicit unavailable state. A configured Calendly link can still open the actual scheduling service.
 
@@ -69,7 +69,7 @@ After connecting services, confirm one actual test booking, verify the calendar 
 
 ## Analytics and attribution
 
-`lib/analytics.ts` exposes one `track()` function. It dispatches `throughline:analytics` events with first-touch session attribution. Attach your selected analytics provider there; no third-party analytics script is installed by default. The implementation uses `sessionStorage`, never `localStorage`.
+`lib/analytics.ts` exposes one `track()` function. It dispatches `digital-handyman:analytics` events with first-touch session attribution. Attach your selected analytics provider there; no third-party analytics script is installed by default. The implementation uses `sessionStorage`, never `localStorage`.
 
 The meaningful event names are `hero_cta`, `library_filtered`, `library_item_opened`, `demo_run`, `calculator_engaged`, `scorecard_start`, `scorecard_complete`, `booking_opened`, `booking_confirmed`, `quote_submitted`, and `phone_clicked`. A completed booking is recorded only on the scheduler's real confirmation event. A written quote is recorded only after successful delivery.
 

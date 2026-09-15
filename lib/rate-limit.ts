@@ -10,7 +10,7 @@ export async function allowRequest(
     request.headers.get("x-forwarded-for")?.split(",")[0] ||
     "local";
   const bucket = Math.floor(Date.now() / 3600000);
-  const key = `throughline:${scope}:${createHash("sha256").update(ip).digest("hex").slice(0, 24)}:${bucket}`;
+  const key = `digital-handyman:${scope}:${createHash("sha256").update(ip).digest("hex").slice(0, 24)}:${bucket}`;
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
   if (url && token) {

@@ -20,7 +20,7 @@ export const interfaceCopy = {
     no_obligation_to_buy_an_audit: " No obligation to buy a Tune-Up.",
     clear_scope_published_prices: " Clear scope. Published prices.",
     your_first_conversation: " Your first conversation",
-    throughline_ai: "Digital Handyman",
+    digital_handyman: "Digital Handyman",
     company_name: "Company name ",
     optional: "optional",
     your_company: "Your company",
@@ -152,7 +152,7 @@ export const interfaceCopy = {
     book_a_call: "Book a call",
     go_to: "Go to",
     automation: "Time-saver",
-    throughline_ai_home: "Digital Handyman home",
+    digital_handyman_home: "Digital Handyman home",
     main_navigation: "Main navigation",
     who_we_are: "Our approach",
     search_the_website: "Search the website",
@@ -161,7 +161,7 @@ export const interfaceCopy = {
     open_navigation: "Open navigation",
     your_industry: "Your industry",
     choose_your_industry: "Choose your industry",
-    call_throughline_ai: "Call Digital Handyman",
+    call_digital_handyman: "Call Digital Handyman",
     arrowdown: "ArrowDown",
     arrowup: "ArrowUp",
     enter: "Enter",
@@ -184,8 +184,8 @@ export const interfaceCopy = {
     see_what_wed_automate: "See what we can take care of",
   },
   Icon: {
-    throughline_ai: "Digital Handyman",
-    throughline: "digital handyman",
+    digital_handyman: "Digital Handyman",
+    brand_name: "digital handyman",
     ai: "",
   },
   Landing: {
@@ -239,17 +239,17 @@ export const interfaceCopy = {
     in_their_own_words: "In their own words.",
     text_1: ", ",
     care_in_every_detail: " Care in every detail.",
-    throughline_ai_home: "Digital Handyman home",
+    digital_handyman_home: "Digital Handyman home",
     less_busywork: "Less busywork.",
     more_room_for_your_business: "More room for your business.",
     the_prices: "The prices",
     the_short_version: "The short version",
     lets_talk: "Let’s talk",
     made_for_the_work_in_your: "Made for the work in your business.",
-    throughline: "digital handyman",
+    brand_name: "digital handyman",
     ai: "",
     text_2: "© ",
-    throughline_ai: " Digital Handyman",
+    digital_handyman: " Digital Handyman",
     built_with_care_built_to_be: "Built with care. Built to be yours.",
     privacy: "Privacy",
   },
@@ -344,7 +344,7 @@ export const interfaceCopy = {
     the_2500_audit_fee_is_credited:
       " The $2,500 Tune-Up fee is credited in full against any build.",
     book_a_30minute_call: "Book a 30-minute call",
-    throughline_business_tagline:
+    digital_handyman_business_tagline:
       "Digital Handyman. Modern tools. Old-fashioned follow-through.",
   },
   app_privacy_page: {
@@ -364,6 +364,6 @@ export const interfaceCopy = {
     your_details: "Your details",
     contact_details_will_be_published_before:
       "Contact details will be published before online booking and email delivery open.",
-    back_to_throughline_ai: "Back to Digital Handyman",
+    back_to_digital_handyman: "Back to Digital Handyman",
   },
 } as const;

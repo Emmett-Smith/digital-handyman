@@ -34,8 +34,8 @@ export function Scorecard({ industry }: { industry?: string }) {
       setStep(0);
       track("scorecard_start");
     };
-    window.addEventListener("throughline:scorecard", launch);
-    return () => window.removeEventListener("throughline:scorecard", launch);
+    window.addEventListener("digital-handyman:scorecard", launch);
+    return () => window.removeEventListener("digital-handyman:scorecard", launch);
   }, []);
   const done = step === questions.length;
   const eligible = automations.filter(
@@ -79,7 +79,7 @@ export function Scorecard({ industry }: { industry?: string }) {
       });
       try {
         sessionStorage.setItem(
-          "throughline.scorecard",
+          "digital-handyman.scorecard",
           JSON.stringify({
             answers: next,
             score: Math.round((next.reduce((n, a) => n + 2 - a, 0) / 16) * 100),

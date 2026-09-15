@@ -1,7 +1,7 @@
 import { chromium } from "playwright";
 import assert from "node:assert/strict";
 
-const origin = process.env.TEST_ORIGIN || "http://127.0.0.1:3100/throughline-ai/";
+const origin = process.env.TEST_ORIGIN || "http://127.0.0.1:3100/digital-handyman/";
 const browser = await chromium.launch({ executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", headless: true, args: ["--no-sandbox"] });
 try {
   const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, reducedMotion: "reduce" });

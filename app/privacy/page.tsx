@@ -25,7 +25,7 @@ export default function Privacy() {
           : copy.contact_details_will_be_published_before}
       </p>
       <a className="button button-dark" href="/">
-        {copy.back_to_throughline_ai}
+        {copy.back_to_digital_handyman}
       </a>
     </main>
   );

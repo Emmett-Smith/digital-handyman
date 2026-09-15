@@ -2164,6 +2164,57 @@ svg {
   border-top: 1px solid var(--line);
   padding-top: 17px;
 }
+.american-service-banner {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(179, 38, 50, .08), transparent 27%, transparent 73%, rgba(49, 91, 134, .1)),
+    var(--instrument);
+}
+.american-service-inner {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr) 150px;
+  align-items: center;
+  gap: clamp(30px, 5vw, 78px);
+  text-align: center;
+}
+.american-service-flag {
+  width: 100%;
+  filter: drop-shadow(0 12px 24px #0005);
+}
+.american-service-inner > div > span {
+  color: #d5b7ba;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+  letter-spacing: .12em;
+}
+.american-service-inner h2 {
+  max-width: 820px;
+  margin: 17px auto 14px;
+  font-size: clamp(32px, 4vw, 54px);
+}
+.american-service-inner p {
+  margin: auto;
+  color: #b9c5d6;
+  font-size: 13px;
+}
+.footer-americana {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 19px;
+  color: #c8d3e1;
+  font-size: 8px;
+}
+.footer-americana i { width: 38px; height: 2px; background: linear-gradient(90deg, #b32632 0 33%, #f4f1e9 33% 66%, #315b86 66%); }
+@media (max-width: 767px) {
+  .american-service-inner { min-height: 360px; grid-template-columns: 48px 1fr 48px; gap: 15px; }
+  .american-service-inner h2 { font-size: 31px; letter-spacing: -1.5px; }
+  .american-service-inner p { font-size: 11px; }
+  .american-service-flag { align-self: start; margin-top: 67px; }
+}
 .mobile-booking {
   display: none;
 }

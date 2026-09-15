@@ -94,7 +94,7 @@ export function Logo({ large = false }: { large?: boolean }) {
     <span
       className={`wordmark ${large ? "wordmark-large" : ""}`}
       role="img"
-      aria-label={copy.throughline_ai}
+      aria-label={copy.digital_handyman}
     >
       <svg
         width="31"
@@ -108,9 +108,35 @@ export function Logo({ large = false }: { large?: boolean }) {
         <path d="m8 6 .75 1.5 1.65.25-1.2 1.15.3 1.65L8 9.8l-1.5.75.3-1.65-1.2-1.15 1.65-.25Z" fill="#fff" stroke="none" />
       </svg>
       <span>
-        {copy.throughline}
+        {copy.brand_name}
         <span className="logo-ai">{copy.ai}</span>
       </span>
     </span>
+  );
+}
+
+export function AmericanFlag({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 190 100"
+      role="img"
+      aria-label="American flag"
+    >
+      <rect width="190" height="100" rx="3" fill="#f7f3e8" />
+      {[0, 2, 4, 6, 8, 10, 12].map((stripe) => (
+        <rect key={stripe} y={(stripe * 100) / 13} width="190" height={100 / 13} fill="#b32632" />
+      ))}
+      <rect width="76" height={(7 * 100) / 13} fill="#163a63" />
+      {Array.from({ length: 20 }, (_, index) => (
+        <circle
+          key={index}
+          cx={9 + (index % 5) * 14.5}
+          cy={8 + Math.floor(index / 5) * 12}
+          r="2.1"
+          fill="#fff"
+        />
+      ))}
+    </svg>
   );
 }

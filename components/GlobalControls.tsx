@@ -61,11 +61,11 @@ export function GlobalControls() {
         return;
       try {
         if (
-          sessionStorage.getItem("throughline.exit") ||
-          sessionStorage.getItem("throughline.scorecard")
+          sessionStorage.getItem("digital-handyman.exit") ||
+          sessionStorage.getItem("digital-handyman.scorecard")
         )
           return;
-        sessionStorage.setItem("throughline.exit", "1");
+        sessionStorage.setItem("digital-handyman.exit", "1");
         setExit(true);
       } catch {}
     };
@@ -115,14 +115,14 @@ export function GlobalControls() {
       return;
     }
     if (id === "scorecard")
-      window.dispatchEvent(new Event("throughline:scorecard"));
+      window.dispatchEvent(new Event("digital-handyman:scorecard"));
     location.hash = id;
   };
   return (
     <>
       <header className={`site-header ${pastHero ? "scrolled" : ""}`}>
         <div className="header-inner">
-          <a href="/" aria-label={copy.throughline_ai_home}>
+          <a href="/" aria-label={copy.digital_handyman_home}>
             <Logo />
           </a>
           <nav aria-label={copy.main_navigation}>
@@ -197,7 +197,7 @@ export function GlobalControls() {
           <a
             href={`tel:${site.contact.phone.replace(/[^+\d]/g, "")}`}
             className="mobile-phone"
-            aria-label={copy.call_throughline_ai}
+            aria-label={copy.call_digital_handyman}
             onClick={() => track("phone_clicked")}
           >
             <Icon name="phone" />
@@ -310,7 +310,7 @@ export function GlobalControls() {
           className="button button-dark"
           onClick={() => {
             setExit(false);
-            window.dispatchEvent(new Event("throughline:scorecard"));
+            window.dispatchEvent(new Event("digital-handyman:scorecard"));
             location.hash = "scorecard";
           }}
         >

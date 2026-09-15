@@ -12,7 +12,7 @@ export type EventName =
   | "quote_submitted"
   | "phone_clicked";
 export type Attribution = Record<string, string>;
-const key = "throughline.session";
+const key = "digital-handyman.session";
 export function attribution(): Attribution {
   if (typeof window === "undefined") return {};
   try {
@@ -52,7 +52,7 @@ export function track(
 ) {
   if (typeof window === "undefined") return;
   window.dispatchEvent(
-    new CustomEvent("throughline:analytics", {
+    new CustomEvent("digital-handyman:analytics", {
       detail: { event, ...attribution(), ...properties },
     }),
   );
@@ -63,11 +63,11 @@ export function book(
 ) {
   if (opportunity)
     try {
-      sessionStorage.setItem("throughline.opportunity", opportunity);
+      sessionStorage.setItem("digital-handyman.opportunity", opportunity);
     } catch {}
   track(event, { opportunity });
   window.dispatchEvent(
-    new CustomEvent("throughline:book", { detail: opportunity }),
+    new CustomEvent("digital-handyman:book", { detail: opportunity }),
   );
   document.getElementById("booking")?.scrollIntoView({
     behavior: matchMedia("(prefers-reduced-motion: reduce)").matches

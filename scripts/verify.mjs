@@ -117,7 +117,7 @@ await check(
     const slider = page.locator('input[type="range"]').first();
     await slider.focus();
     await page.keyboard.press("ArrowRight");
-    await page.waitForTimeout(50);
+    await page.waitForFunction(() => document.querySelector('#calculator input[type="range"]')?.value === "4");
     assert.equal(await slider.inputValue(), "4");
     assert.equal(await page.locator(".annual-number").innerText(), "$73,008");
   },

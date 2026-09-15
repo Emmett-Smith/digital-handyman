@@ -11,7 +11,7 @@ import { Calculator } from "./Calculator";
 import { Scorecard } from "./Scorecard";
 import { Booking } from "./Booking";
 import { GlobalControls, HeroActions, BookButton } from "./GlobalControls";
-import { Icon, Logo } from "./Icon";
+import { AmericanFlag, Icon, Logo } from "./Icon";
 import { interfaceCopy } from "@/content/interface";
 import { ScrollExperience, DeliveryStrip } from "./ScrollExperience";
 import { WorkflowExplorer } from "./WorkflowExplorer";
@@ -291,6 +291,17 @@ export function Landing({
         </section>
         <Testimonials />
         <TrustSection />
+        <section id="american-service" className="american-service-banner instrument" aria-labelledby="american-service-title">
+          <div className="container american-service-inner">
+            <AmericanFlag className="american-service-flag" />
+            <div>
+              <span>PROUD TO SERVE AMERICA’S SMALL BUSINESSES</span>
+              <h2 id="american-service-title">Straight answers. Honest work. A job done right.</h2>
+              <p>Your business stays yours. We explain the work, train your people, and stand behind what we build.</p>
+            </div>
+            <AmericanFlag className="american-service-flag american-service-flag-end" />
+          </div>
+        </section>
         <Booking company={company} industry={industry?.slug} />
       </main>
       <Footer />
@@ -407,7 +418,7 @@ export function Footer() {
     <footer className="footer instrument">
       <div className="container">
         <div className="footer-top">
-          <a href="/" aria-label={copy.throughline_ai_home}>
+          <a href="/" aria-label={copy.digital_handyman_home}>
             <Logo />
           </a>
           <p>
@@ -432,16 +443,19 @@ export function Footer() {
           </div>
         </div>
         <div className="footer-word" aria-hidden="true">
-          {copy.throughline}
+          {copy.brand_name}
           <span>{copy.ai}</span>
         </div>
         <div className="footer-bottom">
           <span>
             {copy.text_2}
-            {new Date().getFullYear()} {copy.throughline_ai}
+            {new Date().getFullYear()} {copy.digital_handyman}
           </span>
           <span>{copy.built_with_care_built_to_be}</span>
           <a href="/privacy">{copy.privacy}</a>
+        </div>
+        <div className="footer-americana" aria-hidden="true">
+          <span>★</span><i /><span>★</span><i /><span>★</span>
         </div>
       </div>
     </footer>
