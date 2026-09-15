@@ -5,8 +5,8 @@ import { spawnSync } from "node:child_process";
 // Make a separate distribution; the full Next application remains unchanged.
 const root = resolve(import.meta.dirname, "..");
 const stage = join(root, ".publish/pages");
-const basePath = process.env.PAGES_BASE_PATH || "/throughline-ai";
-if (!/^\/[a-zA-Z0-9_-]+$/.test(basePath)) throw Error("PAGES_BASE_PATH must be one repository path segment");
+const basePath = process.env.PAGES_BASE_PATH ?? "/throughline-ai";
+if (basePath && !/^\/[a-zA-Z0-9_-]+$/.test(basePath)) throw Error("PAGES_BASE_PATH must be empty or one repository path segment");
 const origin = process.env.NEXT_PUBLIC_SITE_URL || `https://emmett-smith.github.io${basePath}`;
 await rm(stage, { recursive: true, force: true });
 await mkdir(stage, { recursive: true });
