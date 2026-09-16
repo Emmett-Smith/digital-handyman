@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Icon } from "./Icon";
+import { AmericanFlag, Icon } from "./Icon";
 import "./scroll-experience.css";
 
 const chapters = [
@@ -123,7 +123,7 @@ export function DeliveryStrip() {
   return (
     <div className="delivery-strip instrument">
       <div className="container delivery-strip-inner">
-        <p><span className="service-flag" aria-hidden="true"><i /><i /><i /></span> We’ll get it done.<br /><span>Proud to serve America’s small businesses.</span></p>
+        <p><AmericanFlag className="service-strip-flag" /> We’ll get it done.<br /><span>Proud to serve America’s small businesses.</span></p>
         {[
           ["01", "Find the right work", "A focused audit. A clear business case."],
           ["02", "Connect what you have", "Your tools, your rules, your workflow."],

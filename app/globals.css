@@ -380,15 +380,11 @@ svg {
   color: #c8cfdc;
   margin-bottom: 32px;
 }
-.hero-intro-symbol {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #495168;
-  border-radius: 3px;
-  width: 23px;
-  height: 23px;
-  color: #d1d2ff;
+.hero-intro-flag {
+  width: 34px;
+  height: auto;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 4px 8px #0005);
 }
 .hero h1 {
   font-size: clamp(70px, 6.8vw, 98px);
@@ -447,15 +443,11 @@ svg {
   color: #aab4c5;
   margin-top: 35px;
 }
-.micro-line {
-  width: 22px;
-  height: 25px;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent 0 3px,
-    #969bcc 3px 4px
-  );
-  transform: skew(-17deg);
+.hero-pledge-flag {
+  width: 44px;
+  height: auto;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 5px 9px #0005);
 }
 .hero-field {
   position: absolute;
@@ -2138,14 +2130,15 @@ svg {
   text-decoration: underline;
 }
 .footer-word {
-  font-size: clamp(80px, 15.8vw, 230px);
+  font-size: clamp(70px, 9.8vw, 140px);
   line-height: 0.95;
   letter-spacing: -0.065em;
   font-weight: 500;
   color: #2b3749;
   padding: 40px 0 30px;
-  white-space: nowrap;
-  margin-left: -8px;
+  white-space: normal;
+  margin-left: 0;
+  max-width: 100%;
 }
 .footer-word > span {
   font-size: 0.25em;
@@ -2208,7 +2201,7 @@ svg {
   color: #c8d3e1;
   font-size: 8px;
 }
-.footer-americana i { width: 38px; height: 2px; background: linear-gradient(90deg, #b32632 0 33%, #f4f1e9 33% 66%, #315b86 66%); }
+.footer-americana i { width: 38px; height: 1px; background: #657994; }
 @media (max-width: 767px) {
   .american-service-inner { min-height: 360px; grid-template-columns: 48px 1fr 48px; gap: 15px; }
   .american-service-inner h2 { font-size: 31px; letter-spacing: -1.5px; }
@@ -3773,10 +3766,11 @@ dialog::backdrop {
     line-height: 1.8;
   }
   .footer-word {
-    font-size: 16.3vw;
-    margin-left: -3px;
+    font-size: clamp(48px, 15vw, 68px);
+    margin-left: 0;
     letter-spacing: -0.067em;
     padding: 35px 0 25px;
+    line-height: .88;
   }
   .footer-word > span {
     top: 7px;
@@ -4078,7 +4072,7 @@ dialog::backdrop {
     width: 16px;
   }
   .footer-word {
-    font-size: 16vw;
+    font-size: clamp(44px, 14.5vw, 60px);
   }
   .call-content h1 {
     font-size: 33px;

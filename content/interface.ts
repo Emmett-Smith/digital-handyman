@@ -193,8 +193,8 @@ export const interfaceCopy = {
     "2500": "$2,500",
     the_work_as_it_arrives: " The work, as it arrives",
     a_little_more_order: " A little more order",
-    built_for_your_business: "Built around the way you work.",
-    made_for_the_way_your_business: "Made for the way your business works.",
+    built_for_your_business: "Straight answers. Honest work.",
+    made_for_the_way_your_business: "Helping keep America’s small businesses moving.",
     a_clear_place_to_start: "A clear place to start",
     automation_audit: "Business Tune-Up ",
     one_week_credited_in_full_toward:

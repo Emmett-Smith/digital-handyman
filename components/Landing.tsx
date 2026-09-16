@@ -55,14 +55,12 @@ export function Landing({
           <div className="container hero-container">
             <div className="hero-copy">
               <span className="hero-intro">
-                <span className="hero-intro-symbol">
-                  <Icon name="spark" size={13} />
-                </span>
+                <AmericanFlag className="hero-intro-flag" />
                 {company
                   ? `Built for ${industry?.audience || "businesses"} like ${company}.`
                   : industry
                     ? `For ${industry.name.toLowerCase()}`
-                    : "Practical digital help for American small businesses."}
+                    : "Proudly serving American small businesses."}
               </span>
               <h1
                 className={
@@ -77,7 +75,7 @@ export function Landing({
               <p className="hero-description">{site.positioning}</p>
               <HeroActions />
               <div className="hero-micro">
-                <span className="micro-line" />
+                <AmericanFlag className="hero-pledge-flag" />
                 <span>
                   {copy.built_for_your_business}
                   <br />
@@ -415,7 +413,7 @@ function StudioDrawing() {
 }
 export function Footer() {
   return (
-    <footer className="footer instrument">
+    <footer id="footer" className="footer instrument">
       <div className="container">
         <div className="footer-top">
           <a href="/" aria-label={copy.digital_handyman_home}>

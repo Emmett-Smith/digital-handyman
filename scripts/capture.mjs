@@ -30,6 +30,9 @@ for (const width of [1440, 1024, 768, 390, 320]) {
     height: document.documentElement.scrollHeight,
   }));
   console.log(width, dimensions);
+  await page.locator("#footer").scrollIntoViewIfNeeded();
+  await page.waitForTimeout(250);
+  await page.locator("#footer").screenshot({ path: `artifacts/footer-${width}.png` });
   if (width === 1440) {
     for (const id of [
       "library",
