@@ -18,7 +18,7 @@ export const interfaceCopy = {
     thirty_minutes_focused_on_your_business:
       " Thirty minutes, focused on your business.",
     no_obligation_to_buy_an_audit: " No obligation to buy a Tune-Up.",
-    clear_scope_published_prices: " Clear scope. Published prices.",
+    clear_scope_published_prices: " Clear scope. A written quote before work begins.",
     your_first_conversation: " Your first conversation",
     digital_handyman: "Digital Handyman",
     company_name: "Company name ",
@@ -41,7 +41,7 @@ export const interfaceCopy = {
     close_quote_request: "Close quote request",
     what_would_you_like_taken_care: "What would you like taken care of?",
     when_would_you_like_to_start: "When would you like to start?",
-    what_budget_are_you_working_with: "What budget are you working with?",
+    what_kind_of_help_fits_best: "What kind of help fits best?",
     your_quote_request_has_been_sent: "Your quote request has been sent.",
     your_request_has_not_been_sent:
       "Your request has not been sent. Save a copy and try again later.",
@@ -50,9 +50,8 @@ export const interfaceCopy = {
     help_me_find_the_right_starting: "Help me find the right starting point.",
     choose_a_timeline: "Choose a timeline",
     within_three_months: "Within three months",
-    approximate_budget: "Approximate budget",
+    preferred_starting_point: "Preferred starting point",
     text: " — ",
-    "2500_start_with_an_audit": "$2,500 — start with a Business Tune-Up",
     id_like_guidance_on_scope: "I’d like guidance on scope.",
     your_email: "Your email",
     youyourcompanycom: "you@yourcompany.com",
@@ -63,8 +62,6 @@ export const interfaceCopy = {
     save_a_copy_of_my_request: "Save a copy of my request",
   },
   Calculator: {
-    "2500": "$2,500",
-    "9500": "$9,500",
     put_a_number_on_your_time: " Put a number on your time.",
     your_assumptions_your_estimate: "Your assumptions. Your estimate.",
     what_is_the: "What is the",
@@ -80,10 +77,6 @@ export const interfaceCopy = {
     hours_back_every_week: " hours back every week",
     recovered_time_year: "Recovered time / year",
     automation_audit: "Business Tune-Up",
-    build_sprint_starting_at: "Get-It-Done Build, starting at",
-    months: " months",
-    of_recovered_time_equals_the_starting:
-      "of recovered time equals the starting Sprint price.",
     estimated_capacity_not_guaranteed_cash_savings:
       "Estimated capacity, not guaranteed cash savings. Based on 52 weeks. Software and ongoing support costs are additional. We check the real numbers in your Business Tune-Up.",
   },
@@ -147,7 +140,7 @@ export const interfaceCopy = {
     try_the_demo: "Try the demo",
     calculate_your_time: "Calculate your time",
     find_your_starting_point: "Find your starting point",
-    pricing: "Pricing",
+    pricing: "Ways to work together",
     meet_the_studio: "The studio",
     book_a_call: "Book a call",
     go_to: "Go to",
@@ -190,13 +183,13 @@ export const interfaceCopy = {
   },
   Landing: {
     "10": "10",
-    "2500": "$2,500",
     the_work_as_it_arrives: " The work, as it arrives",
     a_little_more_order: " A little more order",
     built_for_your_business: "Straight answers. Honest work.",
     made_for_the_way_your_business: "Helping keep America’s small businesses moving.",
     a_clear_place_to_start: "A clear place to start",
     automation_audit: "Business Tune-Up ",
+    tailored_quote: "Tailored quote",
     one_week_credited_in_full_toward:
       "One week. Credited in full toward any build.",
     scroll_to_the_automation_library: "Scroll to the ways we can help",
@@ -205,8 +198,8 @@ export const interfaceCopy = {
     youve_probably: "You’ve probably",
     tried_to_fix_this: "tried to fix this.",
     text: "+",
-    you_should_know_what_this_costs: " You should know what this costs.",
-    a_scope_a_price_something_that: "A scope. A price. Something that works.",
+    you_should_know_what_this_costs: " A clear way to work together.",
+    a_scope_a_price_something_that: "A useful scope. A tailored quote. No surprises.",
     no_openended: "No open-ended",
     lets_explore_ai: "“maybe the computer can do it.”",
     start_with_the_audit_know_what:
@@ -214,7 +207,7 @@ export const interfaceCopy = {
     then_decide_what_happens_next: "Then decide what happens next.",
     the_work: "The work",
     what_you_get: "What you get",
-    your_investment: "Your investment",
+    next_step: "Next step",
     start_here: " Start here",
     talk_about_the_audit: "Talk about the Tune-Up",
     book_a_call: "Book a call",
@@ -242,7 +235,7 @@ export const interfaceCopy = {
     digital_handyman_home: "Digital Handyman home",
     less_busywork: "Less busywork.",
     more_room_for_your_business: "More room for your business.",
-    the_prices: "The prices",
+    the_prices: "Ways to work together",
     the_short_version: "The short version",
     lets_talk: "Let’s talk",
     made_for_the_work_in_your: "Made for the work in your business.",
@@ -335,14 +328,14 @@ export const interfaceCopy = {
   },
   app_call_page: {
     the_short_version_ai_automation_for:
-      "The short version: practical digital help for your business, with clear prices and a ten-hour guarantee.",
+      "The short version: practical digital help for your business, with clear scopes and tailored quotes.",
     explore_the_full_site: "Explore the full site",
     for_owners_and_teams_with_too:
       "For owners and teams with too much repeat work.",
     a_clearer_week: "A clearer week",
     starts_with_a_conversation: "starts with a conversation.",
-    the_2500_audit_fee_is_credited:
-      " The $2,500 Tune-Up fee is credited in full against any build.",
+    tune_up_terms_are_in_your_quote:
+      " Any Tune-Up and build terms are stated clearly in your written quote.",
     book_a_30minute_call: "Book a 30-minute call",
     digital_handyman_business_tagline:
       "Digital Handyman. Modern tools. Old-fashioned follow-through.",

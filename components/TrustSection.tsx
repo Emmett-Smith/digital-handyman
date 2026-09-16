@@ -22,7 +22,6 @@ const commitments = [
 
 const audit = offers[0];
 const sprint = offers[1];
-const support = offers[2];
 
 const questions = [
   {
@@ -37,11 +36,11 @@ const questions = [
   },
   {
     question: "How long does an engagement take?",
-    answer: `The ${audit.price} Business Tune-Up takes ${audit.time.toLowerCase()}. A Get-It-Done Build starts at ${sprint.price} and is scoped for ${sprint.time.toLowerCase()}. Your quote sets out the work, access needed, milestones, and acceptance checks. The Tune-Up is credited in full against any build.`,
+    answer: `The Business Tune-Up usually takes ${audit.time.toLowerCase()}, and a Get-It-Done Build is commonly scoped for ${sprint.time.toLowerCase()}. After the first conversation, your written quote sets out the work, access needed, milestones, acceptance checks, and price.`,
   },
   {
     question: "What do we own, and what happens after launch?",
-    answer: `Everything we build belongs to your business, with documentation and team training included. Keep-It-Running Service is optional, from ${support.price} per month with a three-month minimum. Maintenance, notice, and handoff terms are agreed in writing before that engagement starts.`,
+    answer: `Everything we build belongs to your business, with documentation and team training included. Keep-It-Running Service is optional and quoted around the support you need. Maintenance, notice, and handoff terms are agreed in writing before that engagement starts.`,
   },
 ];
 

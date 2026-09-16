@@ -1,6 +1,6 @@
 # Digital Handyman
 
-A custom Next.js 15 website for Digital Handyman: practical modernization for small businesses, presented with familiar language, clear prices, interactive examples, twelve industry landing pages, a calculator, a scorecard, and a shared booking flow.
+A custom Next.js 15 website for Digital Handyman: practical modernization for small businesses, presented with familiar language, tailored quotes, interactive examples, twelve industry landing pages, a calculator, a scorecard, and a shared booking flow.
 
 ## Website publication
 
@@ -56,7 +56,7 @@ After connecting services, confirm one actual test booking, verify the calendar 
 
 - `content/industries.ts`: twelve industry profiles, three hooks each, example tasks, estimated hours, calculator defaults. Adding another profile generates its page and OG image without a new component.
 - `content/automations.ts`: forty tasks, their department and industry mappings, input/output explanations, illustrative hours.
-- `content/site.ts`: offers, exact prices, guarantee, business contact settings, process, and ownership terms.
+- `content/site.ts`: offers, quote language, guarantee, business contact settings, process, and ownership terms.
 - `content/interface.ts`: typed interface copy.
 - `content/demo.ts`: three clearly fictional input examples and their recorded results.
 - `content/scorecard.ts`: eight questions and task mappings.
@@ -64,7 +64,7 @@ After connecting services, confirm one actual test booking, verify the calendar 
 - `content/testimonials.ts`: an intentionally empty typed array. Its section renders nothing until real entries exist.
 - `/for/[industry]`: twelve statically generated canonical pages. Valid or malformed `co`/`v` parameters take an internal server-rendered route, keeping the visible URL. Company text is stripped to ASCII letters, numbers and spaces, normalized, and capped at forty characters.
 - `/c/[slug]`: approved named-account pages; unknown slugs render the generic homepage with HTTP 200.
-- `/call`: a concise summary with prices, guarantee, and booking link. No canvas or scroll libraries. It allows natural scrolling on small screens or enlarged text.
+- `/call`: a concise summary with engagement options, guarantee, and booking link. No canvas or scroll libraries. It allows natural scrolling on small screens or enlarged text.
 - `/privacy`: the data handling description for this implementation.
 
 ## Analytics and attribution

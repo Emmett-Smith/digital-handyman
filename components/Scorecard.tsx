@@ -190,7 +190,7 @@ export function Scorecard({ industry }: { industry?: string }) {
               </button>
               <EmailCopy
                 label="Send me the written plan"
-                text={`Digital Handyman — your starting point\nTime-saving opportunity score: ${score}/100\n\n${ranked.map((a) => `${a.title} Illustrative estimate: ${a.hours[0]}–${a.hours[1]} hours/week.`).join("\n")}\n\nThese tasks may overlap. A Business Tune-Up checks the actual hours and gives you a fixed build quote. Business Tune-Up: $2,500, credited in full against any build.`}
+                text={`Digital Handyman — your starting point\nTime-saving opportunity score: ${score}/100\n\n${ranked.map((a) => `${a.title} Illustrative estimate: ${a.hours[0]}–${a.hours[1]} hours/week.`).join("\n")}\n\nThese tasks may overlap. A Business Tune-Up checks the actual hours and gives you a written quote tailored to the work.`}
               />
               <button className="text-button" onClick={start}>
                 {copy.start_again}

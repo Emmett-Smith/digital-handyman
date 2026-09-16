@@ -62,7 +62,7 @@ export function Calculator({
       once.current = true;
     }
   };
-  const text = `Digital Handyman — your estimate\n\n${values.people} people × ${values.hours} hours/week × ${values.share}% recoverable = ${hours.toFixed(1)} hours/week.\nHourly cost including overhead: ${money(values.rate)}.\nEstimated annual value of recovered time: ${money(annual)} (52 weeks).\nBusiness Tune-Up: $2,500, credited in full against a build. Get-It-Done Build: from $9,500.\nAt these assumptions, the starting build price equals ${((9500 / (annual || 1)) * 12).toFixed(1)} months of recovered capacity.\nThis is an estimate of time capacity, not guaranteed cash savings. Software, ongoing support, adoption, and other costs are not included. The Tune-Up checks your actual process and assumptions.`;
+  const text = `Digital Handyman — your estimate\n\n${values.people} people × ${values.hours} hours/week × ${values.share}% recoverable = ${hours.toFixed(1)} hours/week.\nHourly cost including overhead: ${money(values.rate)}.\nEstimated annual value of recovered time: ${money(annual)} (52 weeks).\nThis is an estimate of time capacity, not guaranteed cash savings. A conversation and Business Tune-Up confirm the actual process, likely value, scope, and tailored quote.`;
   return (
     <section id="calculator" className="calculator-section instrument">
       <div className="container">
@@ -167,37 +167,8 @@ export function Calculator({
               <div className="comparison-row">
                 <span>{copy.recovered_time_year}</span>
                 <span className="mono">{money(annual)}</span>
-                <div
-                  className="comparison-bar recovered"
-                  style={{ width: `${capacity.recoveredWidth}%` }}
-                />
+                <div className="comparison-bar recovered" style={{ width: "100%" }} />
               </div>
-              <div className="comparison-row">
-                <span>{copy.automation_audit}</span>
-                <span className="mono">{copy["2500"]}</span>
-                <div
-                  className="comparison-bar cost"
-                  style={{
-                    width: `${capacity.auditWidth}%`,
-                  }}
-                />
-              </div>
-              <div className="comparison-row">
-                <span>{copy.build_sprint_starting_at}</span>
-                <span className="mono">{copy["9500"]}</span>
-                <div
-                  className="comparison-bar cost"
-                  style={{
-                    width: `${capacity.sprintWidth}%`,
-                  }}
-                />
-              </div>
-            </div>
-            <div className="payback">
-              <span className="mono">
-                {((9500 / annual) * 12).toFixed(1)} {copy.months}
-              </span>
-              <span>{copy.of_recovered_time_equals_the_starting}</span>
             </div>
             <p className="calculator-disclaimer">
               {copy.estimated_capacity_not_guaranteed_cash_savings}

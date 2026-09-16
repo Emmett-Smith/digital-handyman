@@ -44,7 +44,7 @@ export function ogImage(headline: string, audience = "For the everyday work.") {
         }}
       >
         <span>Less repeat work. More time back.</span>
-        <span>Business Tune-Up $2,500</span>
+        <span>Start with a conversation</span>
       </div>
     </div>,
     { width: 1200, height: 630 },

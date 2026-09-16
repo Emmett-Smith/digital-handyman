@@ -34,7 +34,7 @@ try {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${width}px layout overflow`);
     if (width === 1440) {
       await page.locator(".chapter-menu summary").click();
-      await page.getByRole("navigation", { name: "Jump to a section" }).getByRole("link", { name: /Know the investment/ }).click();
+      await page.getByRole("navigation", { name: "Jump to a section" }).getByRole("link", { name: /Ways to work together/ }).click();
       assert.equal(new URL(page.url()).hash, "#pricing");
       assert.equal(await page.locator(".chapter-menu").evaluate(node => node.open), false);
       const scan = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();

@@ -22,7 +22,7 @@ export function Booking({
   const [step, setStep] = useState(0);
   const [task, setTask] = useState("");
   const [timeline, setTimeline] = useState<string>(copy.within_a_month);
-  const [budget, setBudget] = useState("$2,500 — start with an Audit");
+  const [budget, setBudget] = useState("Help me choose the right scope");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
@@ -211,7 +211,7 @@ export function Booking({
                   className="button button-white"
                   onClick={() =>
                     downloadText(
-                      `Digital Handyman — 30-minute call agenda\nCompany: ${company || copy.your_company}\nThe work eating the most time: ${problem || copy.discuss_recurring_work_and_possible_starting}\n\nBusiness Tune-Up: $2,500, one week. Fee credited in full against any build.\n${site.guarantee}`,
+                      `Digital Handyman — 30-minute call agenda\nCompany: ${company || copy.your_company}\nThe work eating the most time: ${problem || copy.discuss_recurring_work_and_possible_starting}\n\nWe’ll discuss the work and prepare a tailored quote after we understand the scope.\n${site.guarantee}`,
                       "digital-handyman-call-agenda.txt",
                     )
                   }
@@ -269,7 +269,7 @@ export function Booking({
               [
                 copy.what_would_you_like_taken_care,
                 copy.when_would_you_like_to_start,
-                copy.what_budget_are_you_working_with,
+                copy.what_kind_of_help_fits_best,
               ][step]
             }
           </h2>
@@ -343,18 +343,16 @@ export function Booking({
             ) : (
               <>
                 <label>
-                  {copy.approximate_budget}
+                  {copy.preferred_starting_point}
                   <select
                     value={budget}
                     onChange={(e) => setBudget(e.target.value)}
                   >
                     {offers.map((o) => (
                       <option key={o.name}>
-                        {o.price} {copy.text}
                         {o.name}
                       </option>
                     ))}
-                    <option>{copy["2500_start_with_an_audit"]}</option>
                     <option>{copy.id_like_guidance_on_scope}</option>
                   </select>
                 </label>

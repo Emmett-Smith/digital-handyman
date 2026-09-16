@@ -90,7 +90,7 @@ export function Landing({
                 </span>
                 <span>
                   {copy.automation_audit}
-                  <strong className="mono">{copy["2500"]}</strong>
+                  <strong>{copy.tailored_quote}</strong>
                 </span>
                 <small>{copy.one_week_credited_in_full_toward}</small>
               </div>
@@ -174,7 +174,7 @@ export function Landing({
                   <tr>
                     <th scope="col">{copy.the_work}</th>
                     <th scope="col">{copy.what_you_get}</th>
-                    <th scope="col">{copy.your_investment}</th>
+                    <th scope="col">{copy.next_step}</th>
                   </tr>
                 </thead>
                 <tbody>

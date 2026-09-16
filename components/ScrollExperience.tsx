@@ -10,7 +10,7 @@ const chapters = [
   { id: "process", label: "How we build" },
   { id: "demo", label: "Try it for yourself" },
   { id: "calculator", label: "Work out the value" },
-  { id: "pricing", label: "Know the investment" },
+  { id: "pricing", label: "Ways to work together" },
   { id: "studio", label: "Our approach" },
   { id: "questions", label: "The details that matter" },
   { id: "booking", label: "Start a conversation" },

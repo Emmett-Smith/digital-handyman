@@ -43,7 +43,7 @@ export default function CallPage() {
         <div className="call-guarantee">
           <Icon name="shield" />
           <p>
-            {site.guarantee} {copy.the_2500_audit_fee_is_credited}
+            {site.guarantee} {copy.tune_up_terms_are_in_your_quote}
           </p>
         </div>
         <CallAction />

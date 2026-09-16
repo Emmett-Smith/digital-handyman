@@ -160,7 +160,7 @@ await check(
     await page.keyboard.press("Control+k");
     await page
       .getByRole("combobox", { name: "Search tasks and sections" })
-      .fill("Pricing");
+      .fill("Ways to work");
     await page.keyboard.press("Enter");
     assert.equal(
       await page.locator(".command-dialog").evaluate((d) => d.open),
@@ -358,7 +358,7 @@ await check(
   },
 );
 await check(
-  "Low-value calculator comparisons retain an honest scale",
+  "Low-value calculator keeps recovered-time value clearly labeled",
   async () => {
     await page.goto(origin, { waitUntil: "networkidle" });
     for (const slider of await page
@@ -373,9 +373,7 @@ await check(
     const widths = await page
       .locator(".comparison-bar")
       .evaluateAll((bars) => bars.map((bar) => parseFloat(bar.style.width)));
-    assert.ok(widths[0] < widths[1]);
-    assert.ok(widths[1] < widths[2]);
-    assert.equal(widths[2], 100);
+    assert.deepEqual(widths, [100]);
   },
 );
 await check(

@@ -5,7 +5,7 @@ export const site = {
     "We fix the paperwork, follow-ups, and computer chores slowing down your business—then show your team exactly how it works.",
   headline: ["Modern tools.", "Old-fashioned", "follow-through."],
   description:
-    "Practical technology help for American small businesses. Clear prices, working solutions, patient training, and support after the job is done.",
+    "Practical technology help for American small businesses. Clear scopes, tailored quotes, patient training, and support after the job is done.",
   guarantee:
     "If the Business Tune-Up doesn’t identify at least ten hours a week your team can get back, there’s no charge.",
   contact: {
@@ -19,8 +19,8 @@ export const offers = [
   {
     name: "Business Tune-Up",
     time: "One week",
-    price: "$2,500",
-    unit: "fixed price",
+    price: "Tailored quote",
+    unit: "after we understand the work",
     description: "Find the work worth taking off your plate.",
     items: [
       "A walkthrough of how your business actually works",
@@ -33,8 +33,8 @@ export const offers = [
   {
     name: "Get-It-Done Build",
     time: "Two to three weeks",
-    price: "$9,500",
-    unit: "starting at",
+    price: "Tailored quote",
+    unit: "based on the agreed scope",
     description: "One recurring task, taken care of.",
     items: [
       "One workflow built and running in your business",
@@ -47,8 +47,8 @@ export const offers = [
   {
     name: "Keep-It-Running Service",
     time: "Monthly",
-    price: "$2,800",
-    unit: "from, per month",
+    price: "Tailored quote",
+    unit: "based on the support you need",
     description: "Keep getting time back as your business grows.",
     items: [
       "One new time-saving improvement each month",
